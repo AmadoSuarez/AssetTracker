@@ -4,7 +4,6 @@
 
 Version 1.0 
 
-Prepared by Amado Suarez
 
 Team 5
 
@@ -15,7 +14,7 @@ Team 5
 
 
 
-[TOC]
+[toc]
 
 **Revision History**
 
