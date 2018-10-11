@@ -14,7 +14,7 @@ Team 5
 
 
 
-[toc]
+[TOC]
 - [1.    Introduction](#1----introduction)
   * [1.1    Purpose](#11----purpose)
   * [1.2    Document Conventions](#12----document-conventions)
@@ -59,59 +59,110 @@ Team 5
  
 
 
- 
+
 
 # 1.    Introduction
 
 ## 1.1    Purpose 
 
-<Identify the product whose software requirements are specified in this document, including the revision or release number. Describe the scope of the product that is covered by this SRS, particularly if this SRS describes only part of the system or a single subsystem.>
+AssetTracker is a marketplace for virtual reality assets. This platform will allow producers to upload their assets and consumers to access and download them. The platform is subscription based and consumers will have a tiered subscription model. This platform will have administrators that will have access to statistics and data about the whole system and its users.
 
 ## 1.2    Document Conventions
 
-<Describe any standards or typographical conventions that were followed when writing this SRS, such as fonts or highlighting that have special significance. For example, state whether priorities  for higher-level requirements are assumed to be inherited by detailed requirements, or whether every requirement statement is to have its own priority.>
+This project, as discussed with the client, will be developed with agile principles and frequent cyclical iterations with the client will be needed where the design or the focus at that particular stage might be re-determined.
+
+**Some definitions:**
+
+**Consumers**: Clients who will pay a subscription to be allowed to download and use the assets available in the marketplace.
+
+**Producers**: Freelancers affiliated to the platform which create the assets and make them available to the consumers.
 
 ## 1.3    Intended Audience and Reading Suggestions
 
-<Describe the different types of reader that the document is intended for, such as developers, project managers, marketing staff, users, testers, and documentation writers. Describe what the rest of this SRS contains and how it is organized. Suggest a sequence for reading the document, beginning with the overview sections and proceeding through the sections that are most pertinent to each reader type.>
+This document is intended to be read by our developers, the project manager, testers, documentation writers, and the client.
 
 ## 1.4    Product Scope
 
-<Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.>
+AssetTracker is a great tool to convert a tedious operation into a fully functioning marketplace. It facilitates the process of adding producers and keep track of their sales. Producers (and consumers) can have their own profile and collection page with variety of products. Administrators can easily monitor the overall operation.
 
 ## 1.5    References
 
-<List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.>
+This project looked at the following resources for guidance and inspiration:
+
+[Active Admin](https://activeadmin.info/) 
+
+[Agile Best Practices](https://linchpinseo.com/the-agile-method/)
+
+[Ebay Architecture](https://www.slideshare.net/tcng3716/ebay-architecture)
+
+[Design and Implementation of E-Commerce Site
+for Online Shopping](https://opus.govst.edu/cgi/viewcontent.cgi?article=1079&context=capstones) 
+
+[Heroku Architecture](https://devcenter.heroku.com/categories/heroku-architecture)
+
+[Rails](https://guides.rubyonrails.org/)
+
+
+
+
 
 # 2.    Overall Description
 
 ## 2.1    Product Perspective
 
-<Describe the context and origin of the product being specified in this SRS. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the SRS defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful.>
+AssetTracker is a Virtual Reality Assets marketplace. This project allows viewing various products available, enables registered users to purchase desired products instantly.
+
+This project provides an easy access to Administrators to keep track of all activities inside the whole system. 
 
 ## 2.2    Product Functions
 
-<Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary (such as a bullet list) is needed here. Organize the functions to make them understandable to any reader of the SRS. A picture of the major groups of related requirements and how they relate, such as a top level data flow diagram or object class diagram, is often effective.>
+AssetTracker is a marketplace for Virtual Reality assets. Instead of designing all of your assets yourself, this platform allows you to buy/lease assets from creators around the country.
+
+The marketplace will allow producers to register, upload, and display their assets into the platform. They will also be able to monitor statistics about their own assets. They also will be able to monitor their royalty earnings from the use of their assets.
+
+Consumers will be able to register under a tiered subscription and download assets as they please as long as it is allow under their particular subscription.
+
+Administrators will be able to manage both consumer and producers accounts, watch the performance of all users and assets, and manage payments.
+
+**Diagram Needed - WIP** 
 
 ## 2.3    User Classes and Characteristics
 
-<Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.>
+This system has three type of users: producers, consumers, and administrators. Administrators need advance access to the system and can only be created by a super-administrator. However, all three type of users are critical to the well being of the business. 
+
+Producers who will register, upload, and display their assets into the platform. They will also be able to monitor statistics about their own assets. They also will be able to monitor their royalty earnings from the use of their assets.
+
+Consumers will be able to register under a tiered subscription and download assets as they please as long as it is allow under their particular subscription.
+
+Administrators will be able to manage both consumer and producers accounts, watch the performance of all users and assets, and manage payments.
 
 ## 2.4    Operating Environment
 
-<Describe the environment in which the software will operate, including the hardware platform, operating system and versions, and any other software components or applications with which it must peacefully coexist.>
+This project will be launched as a containerized web application hosted in a cloud platform. Docker will be used for the containerization part and Heroku as the cloud platform.
 
 ## 2.5    Design and Implementation Constraints
 
-<Describe any items or issues that will limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).>
+The application will be build in Ruby on Rails and Stripe will be used to process the payments, and it will use a Postgres database. Bootstrap and other front-end frameworks might be used. The team will develop the software following Agile principles.
+
+A post-delivery service agreement with the client is on the table but has not been determined yet.
 
 ## 2.6    User Documentation
 
-<List the user documentation components (such as user manuals, on-line help, and tutorials) that will be delivered along with the software. Identify any known user documentation delivery formats or standards.>
+A user manual for all users will be delivered at the final stage in the form of a help page or subdomain within the application.
 
 ## 2.7    Assumptions and Dependencies
 
 <List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).>
+
+
+
+This projects assumes that the assets will be able to be stored as BLOBS in the Postgres database. If this is not possible, we might have to use Amazon S3 or other solutions to store the assets. This could cause a significant delay in the delivery of the project.
+
+This project assumes that the administrators will be the ones setting subscription prices.
+
+This project assumes the client will provide us with all of the metrics that he would like being monitored in the system and agrees that some metrics might not be possible to track or could cause significant delays and/or affect the budget.
+
+This project also assumes single level administrators without  different privilege levels among them.
 
 # 3.    External Interface Requirements
 
