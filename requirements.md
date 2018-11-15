@@ -120,7 +120,11 @@ AssetTracker is a marketplace for Virtual Reality assets. Instead of designing a
 
 The marketplace will allow producers to register, upload, and display their assets into the platform. They will also be able to monitor statistics about their own assets. They also will be able to monitor their royalty earnings from the use of their assets.
 
+
+
 Consumers will be able to register under a tiered subscription and download assets as they please as long as it is allow under their particular subscription.
+
+
 
 Administrators will be able to manage both consumer and producers accounts, watch the performance of all users and assets, and manage payments.
 
@@ -140,9 +144,24 @@ Administrators will be able to manage both consumer and producers accounts, watc
 
 This project will be launched as a containerized web application hosted in a cloud platform. Docker will be used for the containerization part and Heroku as the cloud platform.
 
+Our Rails deployment option is Heroku, which is a hosted platform built specifically for deploying Rails and other web applications. Heroku makes deploying Rails applications ridiculously easy—as long as your source code is under version control with Git. Heroku’s free tier is more than sufficient for this project. Heroku uses the PostgreSQL database,  which means that we need to add the pg gem in the production environment to allow Rails to talk to Postgres.
+
+
+
+
 ## 2.5    Design and Implementation Constraints
 
 The application will be build in Ruby on Rails and Stripe will be used to process the payments, and it will use a Postgres database. Bootstrap and other front-end frameworks might be used. The team will develop the software following Agile principles.
+
+Rails follows the model-view-controller (MVC) architectural pattern, which enforces a separation between the data in the application (such as user information) and the code used to display it, which is a common way of structuring a graphical user interface (GUI). When interacting with a Rails application, a browser sends a request, which is received by a webserver and passed on to a Rails controller, which is in charge of what to do next. In some cases, the controller will immediately render a view, which is a template that gets converted to HTML and sent back to the browser. More commonly for dynamic sites, the controller interacts with a model, which is a Ruby object that represents an element of the site (such as a user) and is in charge of communicating with the database. After invoking the model, the controller then renders the view and returns the complete web page to the browser as HTML. 
+First we create a data model for the users, which is a representation of the structures needed by our application. Users of our AssetTracker app will have a unique identifier called id (of type integer), a publicly viewable name (of type string),  an email address (also of type string) that will double as a unique username, as well as a type of user (admin or regular user) (also of type string). 
+The data model for the assets  has only an id and a type field for the  VR Asset (of type object).  There’s an additional complication, though: we want to associate each asset with a particular user.We’ll accomplish this by recording the user_id of the owner of the  vr asset.
+
+
+
+
+
+
 
 A post-delivery service agreement with the client is on the table but has not been determined yet.
 
