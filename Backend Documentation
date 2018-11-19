@@ -1,0 +1,23 @@
+# AssetTracker Backend Technologies                                                                           version 1811.18
+**Reason why AssetTracker has strong Backend development**
+1. *Security* - AssetTracker code needs to be verified and trusted as part of AssetTracker Software, so users do not attempt to bypass the validation and/or security.
+2. *Performance* - AssetTracker is built on do it once and cache computation to avoid duplication. Ability to process heavy computation on fast machines. 
+3. *Capability* - AssetTracker bring dynamic behavior to the table with requiring extensive JavaScript Support.
+
+## AssetTracker Built with Node.JS
+*Why use Node.JS for AssetTracket?*
+* JavaScript is a widely extensively used language and requires little to no time to start coding.
+* AssetTracker requires multiple updates on its screens. Node.JS offers the ability to send quick updates.
+* Node.JS has a huge ecosystem of packages to interact with AssetTracker technologies.
+* Node.JS offers a runtime environment that runs JavaScript withouth the confinements of a browser.
+
+#### Extensive Modules Use In AssetTracker
+* All Modules are descriptive and functionally related.
+* AssetTracket offers a central repository for all Modules.
+
+## Updates ahead....
+* AssetTrackets multi level structured Application Program Interfaces (APIs)
+* AssetTracker's maintainence of the state between our backend and frontend.
+* Enchanced Privacy & Security 
+* Architectecture of the various services together
+* Backend deployment services
