@@ -49,3 +49,13 @@ One of Docker’s greatest benefits is portability. Over last few years, all maj
 **Security:**
 
 Docker ensures that applications that are running on containers are completely segregated and isolated from each other, granting you complete control over traffic flow and management. No Docker container can look into processes running inside another container. From an architectural point of view, each container gets its own set of resources ranging from processing to network stacks. 
+
+## Components Utilization
+
+**UCP** is required to manage the applications lifecycle from the same platform. Is meant as a one central system to cut across any cloud, any infrastructure.
+
+**DTR** is required when Enterprises often require more control over their assets and workflow, preferring a repository they control and can supervise.
+
+**Load Balancer** is seen as the doorman for our servers when we have to route those clients request across all servers who are capable of doing such with a maximized speed and capacity utilization, to make sure no overload occurs or any server is overworked.
+
+**VPC** (virtual private cloud) is the logical division of a service provider's public cloud multi-tenant architecture to support private cloud computing
