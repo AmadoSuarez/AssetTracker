@@ -1,0 +1,85 @@
+Front End Development 
+AssetTracker’s Front-End is an AngularJS Application connected to a Ruby and Rails API.  
+Highlights:
+•	Ruby on Rails API.
+•	AngularJS Application Core Integrated with RequireJS
+•	Gulp, Bootstrap 3, LESS
+•	JavaScript Dependency Loading with Bower
+•	Modular NPM Based Coding Structure
+Structure: 
+We created our folder structure as simple as possible so it is easier to plan, build and test. 
+source/ # AssetTracker front-end modules
+├── app/ # angular app specific source files 
+│ └── modules/ 
+├── scripts/ # app scripts and binaries	 
+├── tests/ # app tests, both unit &amp; integration 
+├── Gulpfile.js # app gulp file for modifying configuration and adding tasks 
+├── bower.json # app js dependencies 
+└── package.json # app npm dependencies
+
+Important files and folders:
+Here is a list of import things about the structure of the AssetTracker’s AngularJS Frontend:
+app/
+o	This folder contains the core of the AssetTracker Angular Seed.
+app/modules/
+o	This is where all the AssetTracker modules will be installed into your application by our CLI.
+o	NPM Modules made to work with AssetTracker will also be placed here.
+o	Custom modules will also be added inside this folder, either by creating it manually using the AssetTracker CLI's install, generate or scaffold commands.
+scripts/
+o	This is where we store our front-end scripts. 
+o	Scripts can be defined in package.json and then run with `npm run-script [name]`.
+Gulpfile.js
+o	Defines the Applications global (main) gulp config.
+o	Registers the Applications included Gulp tasks.
+
+bower.json
+o	Stores the apps main bower dependencies install during setup with the CLI.
+package.json
+o	Defines the Application information, scripts and it's NPM dependencies like any normal NPM Module.
+o	Defines the modules that are enabled, using the bundledDependencies[] array. (This also let's NPM know that these dependencies are local and not on the NPM Registry).
+Modules
+These are the most important part of your application, where all your functionality and testing is defined.
+Structure
+This is a typical front-end (angular) module structure.
+example-module/
+module/ 
+├── script/ # module angular scripts
+│ └── controllers/ 
+│ └── directives/ 
+│ └── services/ 
+│ └── resources/
+├── styles/ # module styles (optional)
+├── img / # module images (optional)
+├── fonts/ # module fonts (optional)
+├── views/ # module ngTemplates	 
+├── test/ # module tests
+│ └── unit/
+│ └── e2e/
+├── main.js # module requirejs scripts 
+├── module.js # angular main module
+├── bower.json # module js dependencies 
+├── Gulpfile.js # module gulp tasks 
+└── package.json # module npm dependencies
+
+Important files and folders
+scripts/
+o	This folder contains all the scripts required for the module. ie - all the modules angular controllers, directives, services and resources.
+views/
+o	This allows each module to define it's own views for the ngtemplates provided within each module.
+tests/
+o	Two folders for testing, unit/ and e2e/
+o	This allows each module to define its own tests for the functionality (code) that is provided within each module.
+main.js
+o	This is the requirejs main file, use it to specify all the JavaScript files you need for your module.
+module.js
+o	Instantiates and configures angular modules for your module.
+bower.json
+o	Defines the modules JavaScript dependencies.
+package.json
+o	Defines the Application and its information, scripts and NPM dependencies just like every other NPM Module.
+o	This is where you define which Modules are enabled, using the bundledDependencies[] array.
+Note: By adding modules into the bundledDependencies[] array, you are also letting NPM know that these dependencies are local and not on the NPM Registry, meaning NPM will never search or download those modules from the internet.
+The order in which you place modules inside your bundledDependencies[] array will be the loading order of the modules.
+Gulpfile.js
+o	Defines the Applications global (main) gulp Config.
+o	Registers the Applications included Gulp tasks.
