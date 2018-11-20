@@ -17,6 +17,7 @@ Docker Enterprise Edition has two main components: Docker Universal Control Plan
 ## Architecture
 
 <img width="704" alt="screen shot 2018-11-18 at 12 47 23 pm" src="https://user-images.githubusercontent.com/37644969/48748674-9e727580-ec45-11e8-8768-d79305ea076d.png">
+
 **Quick overview of Docker EE environment on AWS**
 
 This overview represents the following:
