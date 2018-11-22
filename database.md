@@ -7,9 +7,13 @@ The AssetTracker data management system contains four Entity Components.  They a
 
 
 ### Example table: Figure 1.1
- Users (Entity)
-  > Entity_id	Entity_position	Entity_name	ForeignKey.otherEntity_id
-  > 123456789	freelancer	“Joan Quintero”	222
+
+  Users (Entity) 
+  ---
+  | U_id | U_position | U_name | other.id (FK) |
+  | -------- | -------- | -------- | -------- |
+  | 123456789   | freelancer   | “Joan Quintero”  |  222  | 
+
 
 Figure 1.1 Definition
 
