@@ -35,9 +35,10 @@ The AssetTracker data management system contains four Entity Components.  They a
 ![Image of Table_Assets](https://github.com/AmadoSuarez/AssetTracker/blob/database_joan/Table_assets.png)
 
 ### Table Asset
-**Field/Attribute** | idVRAssets | Asset_name | Asset_size | Asset_quality
------------- | ------------- | ------------- | -------------
-**Datatype** | INT | VAR CHAR (45) | VAR CHAR (45) | VAR CHAR (45) 
------------- | ------------- | ------------- | -------------
-**Flagtype** | PK, NN, UQ | NN | N/D | N/D 
+---
+| **Field/Attribute** | idVRAssets | Asset_name | Asset_size | Asset_quality |
+| ------------ | ------------- | ------------- | ------------- |
+| **Datatype** | INT | VAR CHAR (45) | VAR CHAR (45) | VAR CHAR (45) |
+| ------------ | ------------- | ------------- | ------------- |
+| **Flagtype** | PK, NN, UQ | NN | N/D | N/D |
 
