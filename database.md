@@ -31,4 +31,4 @@ Row: is an ordered set of known or unknown values with names
 Foreign Key: A foreign key is a column (or columns) that references a column (most often the primary key) of another table. 
  
 
-
+![Image of Table_Assets](https://github.com/AmadoSuarez/AssetTracker/blob/database_joan/Table_assets.png)
