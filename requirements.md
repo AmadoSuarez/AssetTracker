@@ -148,7 +148,7 @@ A post-delivery service agreement with the client is on the table but has not be
 
 ## 2.6    User Documentation
 
-A user manual for all users will be delivered at the final stage in the form of a help page or subdomain within the application.
+A user manual for all users will be delivered at the final stage in the form of a help page or subdomain within the application. User Manual will explain how hidden features within the application work, such as Databases, creating tables, inserting and/or updating tables and fetching data. 
 
 ## 2.7    Assumptions and Dependencies
 
@@ -246,6 +246,10 @@ Appendix A: Glossary
 
 Appendix B: Analysis Models
 
+## Figure 1.2 in "TABLE VRAssets"
+![Image of Table_Assets](https://github.com/AmadoSuarez/AssetTracker/blob/database_joan/Table_assets.png)
+ **Visit TABLE VRAssets to learn more.**
+---
 <Optionally, include any pertinent analysis models, such as data flow diagrams, class diagrams, state-transition diagrams, or entity-relationship diagrams.>
 
 Appendix C: To Be Determined List
