@@ -15,7 +15,7 @@ The AssetTracker data management system contains four Entity Components.  They a
   | 123456789   | freelancer   | “Joan Quintero”  |  222  | 
 
 
-Figure 1.1 Definition
+**Figure 1.1 Definition**
 
 •	This is the database table for Users. Therefore, Users is known as the Entity.
 •	Fields are the attributes pertaining to an Entity. Fields/Attributes are placed on the zero row of a table and the values pertaining to such field/attribute are below them forming a column.
@@ -24,11 +24,12 @@ Figure 1.1 Definition
 •	Column 3 or Entity_name in this table, is the column reserved for name of user.
 •	Lastly, Column 4 or ForeignKey.otherEntity_id is a unique column in the table (note: some tables do not need a Foreign Key attribute known as reference) and in this, FK vas a value of “222” which refers to the id of another table. (check below for Foreign Key definition)
 
-Definitions: 
+**Definitions:**
 
-Primary Key: A primary key, also called a unique key, is a value in a relational database that is unique for each record (or row).
-Row: is an ordered set of known or unknown values with names 
-Foreign Key: A foreign key is a column (or columns) that references a column (most often the primary key) of another table. 
+**Primary Key:** A primary key, also called a unique key, is a value in a relational database that is unique for each record (or row).
+**Row:** is an ordered set of known or unknown values with names.
+**Foreign Key:** A foreign key is a column (or columns) that references a column (most often the primary key) of another table. 
  
-
+ 
+## First draft of Table Assets
 ![Image of Table_Assets](https://github.com/AmadoSuarez/AssetTracker/blob/database_joan/Table_assets.png)
