@@ -66,7 +66,8 @@ Selenium-WebDriver, also known as Selenium 2.0 will be used to execute tests in 
 Selenium-WebDriver was developed to better support dynamic web pages where elements of a page may change without the page itself being reloaded. WebDriver’s goal is to supply a well-designed object-oriented API that provides improved support for modern advanced web-app testing problems.
 
 Why use Selenium-WebDriver?  
--Real-life Interaction: It interacts with page elements in a more realistic way, for example lets say you have a disabled text box on a page you were testing, WebDriver really cannot enter any value in it just as how a real person cannot.
--Speed: WebDriver is really fast since it speaks directly to the browser uses the browser's own engine to control it.
--Browser Support: WebDriver can support the headless HtmlUnit browser.
+- Real-life Interaction: It interacts with page elements in a more realistic way, for example lets say
+you have a disabled text box on a page you were testing, WebDriver really cannot enter any value in it just as how a real person cannot.
+- Speed: WebDriver is really fast since it speaks directly to the browser uses the browser's own engine to control it.
+- Browser Support: WebDriver can support the headless HtmlUnit browser.
 
