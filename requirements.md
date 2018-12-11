@@ -128,6 +128,15 @@ Consumers will be able to register under a tiered subscription and download asse
 
 Administrators will be able to manage both consumer and producers accounts, watch the performance of all users and assets, and manage payments.
 
+
+
+
+
+
+
+
+
+
 **Diagram Needed - WIP** 
 
 ## 2.3    User Classes and Characteristics
@@ -156,8 +165,6 @@ The application will be build in Ruby on Rails and Stripe will be used to proces
 Rails follows the model-view-controller (MVC) architectural pattern, which enforces a separation between the data in the application (such as user information) and the code used to display it, which is a common way of structuring a graphical user interface (GUI). When interacting with a Rails application, a browser sends a request, which is received by a webserver and passed on to a Rails controller, which is in charge of what to do next. In some cases, the controller will immediately render a view, which is a template that gets converted to HTML and sent back to the browser. More commonly for dynamic sites, the controller interacts with a model, which is a Ruby object that represents an element of the site (such as a user) and is in charge of communicating with the database. After invoking the model, the controller then renders the view and returns the complete web page to the browser as HTML. 
 First we create a data model for the users, which is a representation of the structures needed by our application. Users of our AssetTracker app will have a unique identifier called id (of type integer), a publicly viewable name (of type string),  an email address (also of type string) that will double as a unique username, as well as a type of user (admin or regular user) (also of type string). 
 The data model for the assets  has only an id and a type field for the  VR Asset (of type object).  There’s an additional complication, though: we want to associate each asset with a particular user.We’ll accomplish this by recording the user_id of the owner of the  vr asset.
-
-
 
 
 
@@ -201,6 +208,8 @@ This project also assumes single level administrators without  different privile
 
 <Describe the requirements associated with any communications functions required by this product, including e-mail, web browser, network server communications protocols, electronic forms, and so on. Define any pertinent message formatting. Identify any communication standards that will be used, such as FTP or HTTP. Specify any communication security or encryption issues, data transfer rates, and synchronization mechanisms.>
 
+
+
 # 4.    System Features
 
 <This template illustrates organizing the functional requirements for the product by system features, the major services provided by the product. You may prefer to organize this section by use case, mode of operation, user class, object class, functional hierarchy, or combinations of these, whatever makes the most logical sense for your product.>
@@ -225,7 +234,30 @@ This project also assumes single level administrators without  different privile
 
 <Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind.>
 
- 
+
+4.1.4   Pay User 
+          A user will have a subscription and will be able to upload assets. Their asset will be revised then published. 
+          The user will get paid depending on how many downloads the asset obtains. If the asset is very popular, the proggrammer will get a higher pay.
+
+4.1.5    Publish Assets
+
+        To upload assets the User will need to have a subscription  in order to publish as asset. 
+        After the user has been authenticated the asset will be scanned that it dont contain malicious software. 
+
+        1- Create an instance of the Aws::S3::Resource class.
+
+        2-Provide a bucket name and an object key by calling the #bucket[] and the #object[] methods of your Aws::S3::Resource class instance.
+        Generate a presigned URL by creating an instance of the URI class, and use it to parse the .presigned_url method of your Aws::S3::Resource class instance. 
+        You must specify :put as an argument to .presigned_url, and you must specify PUT to Net::HTTP::Session#send_request if you want to upload an object.
+
+        3-Anyone with the presigned URL can upload an object.
+
+        The upload creates an object or replaces any existing object with the same key that is specified in the presigned URL.
+
+
+        The actual object will be stored separately storage  from the databse, only the url will be stored in the database. 
+        When a user tries to download the asset it will authenticate the sebscription and then either allow or block the user from getting the asset.
+         
 
 REQ-1:    
 
