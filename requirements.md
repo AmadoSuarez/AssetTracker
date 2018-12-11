@@ -257,6 +257,13 @@ This project also assumes single level administrators without  different privile
 
         The actual object will be stored separately storage  from the databse, only the url will be stored in the database. 
         When a user tries to download the asset it will authenticate the sebscription and then either allow or block the user from getting the asset.
+        
+        
+4.1.6   Download An Asset 
+
+            The user must be looged in with a valid subscription. A search asset will be provided. If the user finds an asset that wish to download then he can click the download button.
+            The asset link will be retrieved from the AWS #bucket[] and then then get the actual object from the storage. The object download count will be increased by 1 for each time it gets downloaded.
+
          
 
 REQ-1:    
