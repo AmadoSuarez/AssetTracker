@@ -8,20 +8,20 @@ to ensure a well development of target project. We set standards for:
 
 - Alex Flores-Veliz – Project Manager
 - Amado Suarez - Project Manager
-- Nehemias Miranda –Senior Back End Engineer
-- Albert Oviedo –Senior Front End Enginner
-- Joan Quintero –Database Administrator
-- Manuel De La Rosa –Cloud Infrastructure Engineer
-- Edilenso Garcia –Cloud Infrastructure
-- Saqeb Alam –Lead Designer
-- Shany M. Lajara Contreras –Quality Assurance
+- Nehemias Miranda – Senior Back End Engineer
+- Albert Oviedo – Senior Front End Enginner
+- Joan Quintero – Database Administrator
+- Manuel De La Rosa – Cloud Infrastructure Engineer
+- Edilenso Garcia – Cloud Infrastructure
+- Saqeb Alam – Lead Designer
+- Shany M. Lajara Contreras – Quality Assurance
 
 This section describes policies and procedures that will be used to meet 
 QA project objectives. 
 
 #### The application is expected to perform the following tasks:
 
-- allow producers (freelancers): 
+- Allow producers (freelancers): 
 - to register, upload, and display their assets into the platform.
 - to monitor statistics about their own assets.
 - to monitor their royalty earnings from the use of their assets
@@ -67,7 +67,7 @@ Selenium-WebDriver was developed to better support dynamic web pages where eleme
 
 Why use Selenium-WebDriver?  
 - Real-life Interaction: It interacts with page elements in a more realistic way, for example lets say
-you have a disabled text box on a page you were testing, WebDriver really cannot enter any value in it just as how a real person cannot.
+you have a disabled text box on a page you were testing, WebDriver really cannot enter any value in it just as how a real   person cannot.
 - Speed: WebDriver is really fast since it speaks directly to the browser uses the browser's own engine to control it.
 - Browser Support: WebDriver can support the headless HtmlUnit browser.
 
