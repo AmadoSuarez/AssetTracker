@@ -14,7 +14,7 @@ to ensure a well development of target project. We set standards for:
 - Manuel De La Rosa –Cloud Infrastructure Engineer
 - Edilenso Garcia –Cloud Infrastructure
 - Saqeb Alam –Lead Designer
-- Shany M. Lajara Contreras –Quality Assurance,
+- Shany M. Lajara Contreras –Quality Assurance
 
 This section describes policies and procedures that will be used to meet 
 QA project objectives. 
